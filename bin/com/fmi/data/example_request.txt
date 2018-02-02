@@ -1,3 +1,0 @@
-GET http://java.voidland.org/ HTTP/1.1
-Host: java.voidland.org
-
