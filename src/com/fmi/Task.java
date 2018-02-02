@@ -35,12 +35,7 @@ public class Task implements Callable<Boolean> {
 			String line = br.readLine();
 			System.out.println("Response : " + line);
 			System.out.println("Example response : " + Properties.RESPONSE);
-			if(Properties.RESPONSE.equals(line)) {
-				return true;
-			} else {
-				return false;
-			}
-			
+			return Properties.RESPONSE.equals(line);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
